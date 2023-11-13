@@ -1030,7 +1030,7 @@
             "backgroundId": "596b9c08-102d-4dba-a3a2-cc1b7450eae0",
             "width": 20,
             "height": 18,
-            "type": "TOPDOWN",
+            "type": "POINTNCLICK",
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [],
@@ -1051,7 +1051,7 @@
             "backgroundId": "6d97867b-262a-4352-87e7-b22a46ddb82f",
             "width": 20,
             "height": 18,
-            "type": "TOPDOWN",
+            "type": "POINTNCLICK",
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [],
@@ -1384,7 +1384,7 @@
             "backgroundId": "476d79d6-60c7-44d5-bccd-6b61df92ff78",
             "width": 20,
             "height": 18,
-            "type": "TOPDOWN",
+            "type": "POINTNCLICK",
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [
@@ -1807,7 +1807,7 @@
             "backgroundId": "c3011b61-3996-477f-bb1b-a8dd0378db6f",
             "width": 20,
             "height": 18,
-            "type": "TOPDOWN",
+            "type": "POINTNCLICK",
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [],
@@ -5980,6 +5980,11 @@
             "symbol": "var_dist_low"
         },
         {
+            "id": "15",
+            "name": "_DIST_HIGH",
+            "symbol": "var_dist_high"
+        },
+        {
             "id": "50",
             "name": "_CHAR0",
             "symbol": "var_char0"
@@ -6015,6 +6020,11 @@
             "symbol": "var_charedit_idx"
         },
         {
+            "id": "57",
+            "name": "_CHAREDIT_IsINC",
+            "symbol": "var_charedit_isinc"
+        },
+        {
             "id": "100",
             "name": "_DIST0",
             "symbol": "var_dist0"
@@ -6023,16 +6033,6 @@
             "id": "110",
             "name": "_TIME0",
             "symbol": "var_time0"
-        },
-        {
-            "id": "15",
-            "name": "_DIST_HIGH",
-            "symbol": "var_dist_high"
-        },
-        {
-            "id": "57",
-            "name": "_CHAREDIT_IsINC",
-            "symbol": "var_charedit_isinc"
         }
     ],
     "engineFieldValues": [
@@ -6042,9 +6042,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "b9a8aef3-0996-4f73-895b-cac6299e4f25",
+        "startSceneId": "c18018e8-7035-4514-9afd-d9bf32606868",
         "startX": 0,
-        "startY": 1,
+        "startY": 0,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -6080,9 +6080,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            158,
-            158,
-            314
+            159,
+            159,
+            316
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

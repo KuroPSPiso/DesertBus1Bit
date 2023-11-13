@@ -746,7 +746,7 @@
                                                                 "command": "EVENT_WAIT",
                                                                 "args": {
                                                                     "time": 0.5,
-                                                                    "frames": 30,
+                                                                    "frames": 50,
                                                                     "units": "frames"
                                                                 },
                                                                 "id": "70a9b6d1-55fc-422c-8d09-75ee6a9e4af2"
@@ -5002,7 +5002,7 @@
                             {
                                 "command": "EVENT_IF_EXPRESSION",
                                 "args": {
-                                    "expression": "($_DIST_LOW % 10) > 0",
+                                    "expression": "($14$ % 10) == 1",
                                     "__collapseElse": true,
                                     "__collapse": false
                                 },
@@ -6042,9 +6042,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "f171ad91-af40-4607-b712-794330f333b0",
+        "startSceneId": "b9a8aef3-0996-4f73-895b-cac6299e4f25",
         "startX": 0,
-        "startY": 2,
+        "startY": 1,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -6080,9 +6080,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            159,
-            159,
-            315
+            158,
+            158,
+            314
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

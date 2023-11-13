@@ -5002,7 +5002,7 @@
                             {
                                 "command": "EVENT_IF_EXPRESSION",
                                 "args": {
-                                    "expression": "($_DIST_LOW % 10) > 9",
+                                    "expression": "($_DIST_LOW % 10) > 0",
                                     "__collapseElse": true,
                                     "__collapse": false
                                 },

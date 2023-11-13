@@ -33,8 +33,7 @@
                     "collisionGroup": "",
                     "symbol": "actor_0",
                     "script": [],
-                    "startScript": [],
-                    "updateScript": [
+                    "startScript": [
                         {
                             "command": "EVENT_SET_INPUT_SCRIPT",
                             "args": {
@@ -56,28 +55,42 @@
                                             "useCollisions": false,
                                             "units": "pixels"
                                         },
-                                        "id": "0e8b953d-f880-46e4-82eb-7d25d94acc79"
+                                        "id": "5e12057f-8dc2-4c8c-9376-055f95bdb7df"
                                     },
                                     {
                                         "command": "EVENT_SOUND_PLAY_EFFECT",
                                         "args": {
-                                            "type": "beep",
+                                            "type": "tone",
                                             "priority": "medium",
                                             "pitch": 4,
-                                            "frequency": 200,
-                                            "duration": 0.5,
+                                            "frequency": 400,
+                                            "duration": 0.04,
                                             "wait": true,
                                             "effect": 0
                                         },
-                                        "id": "91dce6bc-5436-4de8-a12a-855886217bd6"
+                                        "id": "841e6bac-2e96-409b-a6cb-35d92c4389fa"
+                                    },
+                                    {
+                                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                                        "args": {
+                                            "type": "tone",
+                                            "priority": "medium",
+                                            "pitch": 4,
+                                            "frequency": 300,
+                                            "duration": 0.2,
+                                            "wait": true,
+                                            "effect": 0
+                                        },
+                                        "id": "7a4de017-df98-4d46-8f80-a122a29cdcb1"
                                     },
                                     {
                                         "command": "EVENT_WAIT",
                                         "args": {
                                             "time": 0.5,
-                                            "frames": 30
+                                            "frames": 30,
+                                            "__collapse": false
                                         },
-                                        "id": "c5c8707f-216c-4625-bc01-5aa2a268d76c"
+                                        "id": "224ccd99-fdbe-401a-b6d8-28944122568b"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_MOVE_RELATIVE",
@@ -89,13 +102,14 @@
                                             "useCollisions": false,
                                             "units": "pixels"
                                         },
-                                        "id": "9ba10b16-56be-42a2-9b42-e7562d08da27"
+                                        "id": "7cd0ac16-b4a8-45d2-9913-f995a1aebfd3"
                                     }
                                 ]
                             },
-                            "id": "b00c9bd7-590a-487d-a9bf-28c3fdd0544f"
+                            "id": "0f23c1cb-6f52-492d-84c0-aa06bfdc77e1"
                         }
                     ],
+                    "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
@@ -746,7 +760,7 @@
                                                                 "command": "EVENT_WAIT",
                                                                 "args": {
                                                                     "time": 0.5,
-                                                                    "frames": 30,
+                                                                    "frames": 50,
                                                                     "units": "frames"
                                                                 },
                                                                 "id": "70a9b6d1-55fc-422c-8d09-75ee6a9e4af2"
@@ -5002,7 +5016,7 @@
                             {
                                 "command": "EVENT_IF_EXPRESSION",
                                 "args": {
-                                    "expression": "($_DIST_LOW % 10) > 0",
+                                    "expression": "($14$ % 10) == 1",
                                     "__collapseElse": true,
                                     "__collapse": false
                                 },
@@ -6042,9 +6056,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "f171ad91-af40-4607-b712-794330f333b0",
+        "startSceneId": "b9a8aef3-0996-4f73-895b-cac6299e4f25",
         "startX": 0,
-        "startY": 2,
+        "startY": 1,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -6080,9 +6094,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            159,
-            159,
-            315
+            158,
+            158,
+            314
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

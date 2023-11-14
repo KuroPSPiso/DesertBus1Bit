@@ -699,7 +699,7 @@
                                         "command": "EVENT_IF_TRUE",
                                         "args": {
                                             "variable": "3",
-                                            "__collapseElse": false
+                                            "__collapseElse": true
                                         },
                                         "children": {
                                             "true": [
@@ -5072,6 +5072,99 @@
                                                             }
                                                         },
                                                         "id": "84152027-7d3b-479d-9f1c-b74a3092900c"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_INC_VALUE",
+                                                        "args": {
+                                                            "variable": "4"
+                                                        },
+                                                        "id": "f893ec08-9f9e-4582-80b7-5a578acbe9ec"
+                                                    },
+                                                    {
+                                                        "command": "EVENT_IF_EXPRESSION",
+                                                        "args": {
+                                                            "expression": "$04$ > 31",
+                                                            "__collapseElse": true
+                                                        },
+                                                        "children": {
+                                                            "true": [
+                                                                {
+                                                                    "command": "EVENT_SET_VALUE",
+                                                                    "args": {
+                                                                        "variable": "4",
+                                                                        "value": {
+                                                                            "type": "number",
+                                                                            "value": 22
+                                                                        }
+                                                                    },
+                                                                    "id": "1bac0c29-e0a1-40b3-9ea2-961540e2bf57"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_INC_VALUE",
+                                                                    "args": {
+                                                                        "variable": "5"
+                                                                    },
+                                                                    "id": "0ce692f0-8b1b-48d4-9363-7d3897cf6a83"
+                                                                },
+                                                                {
+                                                                    "command": "EVENT_IF_EXPRESSION",
+                                                                    "args": {
+                                                                        "expression": "$05$ > 31",
+                                                                        "__collapseElse": true
+                                                                    },
+                                                                    "children": {
+                                                                        "true": [
+                                                                            {
+                                                                                "command": "EVENT_SET_VALUE",
+                                                                                "args": {
+                                                                                    "variable": "5",
+                                                                                    "value": {
+                                                                                        "type": "number",
+                                                                                        "value": 22
+                                                                                    }
+                                                                                },
+                                                                                "id": "b8dae0f5-5b1d-44bb-9f78-fb638f6563e3"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_INC_VALUE",
+                                                                                "args": {
+                                                                                    "variable": "6"
+                                                                                },
+                                                                                "id": "811354f7-fe1d-4844-993d-cf49097c842e"
+                                                                            },
+                                                                            {
+                                                                                "command": "EVENT_IF_EXPRESSION",
+                                                                                "args": {
+                                                                                    "expression": "$06$ > 31",
+                                                                                    "__collapseElse": true
+                                                                                },
+                                                                                "children": {
+                                                                                    "true": [
+                                                                                        {
+                                                                                            "command": "EVENT_SET_VALUE",
+                                                                                            "args": {
+                                                                                                "variable": "7",
+                                                                                                "value": {
+                                                                                                    "type": "number",
+                                                                                                    "value": 22
+                                                                                                }
+                                                                                            },
+                                                                                            "id": "e41cab7d-d15e-45a1-9441-a9a90b2eb526"
+                                                                                        }
+                                                                                    ],
+                                                                                    "false": []
+                                                                                },
+                                                                                "id": "cf0bba58-78e3-4479-adaf-142347bf22aa"
+                                                                            }
+                                                                        ],
+                                                                        "false": []
+                                                                    },
+                                                                    "id": "87a49561-f821-4991-8cff-8330770f01d9"
+                                                                }
+                                                            ],
+                                                            "false": []
+                                                        },
+                                                        "id": "8dcbd3dc-49dd-4d01-8681-f64f81224f1f"
                                                     }
                                                 ],
                                                 "false": []

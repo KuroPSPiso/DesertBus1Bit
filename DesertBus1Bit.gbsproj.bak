@@ -1055,26 +1055,7 @@
             "y": 398.6701343090503,
             "actors": [],
             "triggers": [],
-            "script": [
-                {
-                    "command": "EVENT_OVERLAY_SHOW",
-                    "args": {
-                        "color": "black",
-                        "x": 0,
-                        "y": 0
-                    },
-                    "id": "e4a4996c-dd18-48bf-a02a-b820817461d4"
-                },
-                {
-                    "command": "MY_EVENT_OVERLAY_MOVE_TO_PX",
-                    "args": {
-                        "x": 20,
-                        "y": 20,
-                        "speed": 1
-                    },
-                    "id": "7a939b70-f652-45d3-be5f-0dc706d34f78"
-                }
-            ],
+            "script": [],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []

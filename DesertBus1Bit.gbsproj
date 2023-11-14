@@ -1055,7 +1055,43 @@
             "y": 398.6701343090503,
             "actors": [],
             "triggers": [],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.5,
+                        "frames": 30
+                    },
+                    "id": "d7c252f3-7bf6-43ee-aba6-a86065a0c504"
+                },
+                {
+                    "command": "EVENT_OVERLAY_SHOW",
+                    "args": {
+                        "color": "black",
+                        "x": 0,
+                        "y": 0
+                    },
+                    "id": "e4a4996c-dd18-48bf-a02a-b820817461d4"
+                },
+                {
+                    "command": "MY_EVENT_OVERLAY_MOVE_TO_PX",
+                    "args": {
+                        "x": 20,
+                        "y": 0,
+                        "speed": 1
+                    },
+                    "id": "2f2dabe7-69e7-4ed8-9ac0-2b9922a617e0"
+                },
+                {
+                    "command": "MY_EVENT_OVERLAY_MOVE_TO_PX",
+                    "args": {
+                        "x": 5,
+                        "y": 0,
+                        "speed": 1
+                    },
+                    "id": "531d06fe-f5f2-4552-a2b7-374b8d106e10"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
@@ -1784,8 +1820,8 @@
                     "command": "EVENT_OVERLAY_MOVE_TO",
                     "args": {
                         "x": 0,
-                        "y": 18,
-                        "speed": 1,
+                        "y": 17,
+                        "speed": 5,
                         "__collapse": false
                     },
                     "id": "2688670e-1de4-4123-8d3d-e80f986f7899"
@@ -6056,9 +6092,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "54a0cd4a-3c1b-40bf-9257-cdfff105324e",
+        "startSceneId": "a303c250-8c71-4c02-a4f0-3917d405dc88",
         "startX": 0,
-        "startY": 1,
+        "startY": 6,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -6094,9 +6130,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            162,
-            162,
-            322
+            178,
+            178,
+            354
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

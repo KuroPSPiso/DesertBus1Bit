@@ -1055,7 +1055,25 @@
             "y": 398.6701343090503,
             "actors": [],
             "triggers": [],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.5,
+                        "frames": 30
+                    },
+                    "id": "d7c252f3-7bf6-43ee-aba6-a86065a0c504"
+                },
+                {
+                    "command": "MY_EVENT_OVERLAY_MOVE_TO_PX",
+                    "args": {
+                        "x": 5,
+                        "y": 0,
+                        "speed": "0"
+                    },
+                    "id": "2f2dabe7-69e7-4ed8-9ac0-2b9922a617e0"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
@@ -1784,8 +1802,8 @@
                     "command": "EVENT_OVERLAY_MOVE_TO",
                     "args": {
                         "x": 0,
-                        "y": 18,
-                        "speed": 1,
+                        "y": 17,
+                        "speed": 5,
                         "__collapse": false
                     },
                     "id": "2688670e-1de4-4123-8d3d-e80f986f7899"
@@ -5994,6 +6012,11 @@
             "symbol": "var_dist_low"
         },
         {
+            "id": "15",
+            "name": "_DIST_HIGH",
+            "symbol": "var_dist_high"
+        },
+        {
             "id": "50",
             "name": "_CHAR0",
             "symbol": "var_char0"
@@ -6029,6 +6052,11 @@
             "symbol": "var_charedit_idx"
         },
         {
+            "id": "57",
+            "name": "_CHAREDIT_IsINC",
+            "symbol": "var_charedit_isinc"
+        },
+        {
             "id": "100",
             "name": "_DIST0",
             "symbol": "var_dist0"
@@ -6037,16 +6065,6 @@
             "id": "110",
             "name": "_TIME0",
             "symbol": "var_time0"
-        },
-        {
-            "id": "15",
-            "name": "_DIST_HIGH",
-            "symbol": "var_dist_high"
-        },
-        {
-            "id": "57",
-            "name": "_CHAREDIT_IsINC",
-            "symbol": "var_charedit_isinc"
         }
     ],
     "engineFieldValues": [
@@ -6056,9 +6074,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "b9a8aef3-0996-4f73-895b-cac6299e4f25",
+        "startSceneId": "a303c250-8c71-4c02-a4f0-3917d405dc88",
         "startX": 0,
-        "startY": 1,
+        "startY": 6,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -6094,9 +6112,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            158,
-            158,
-            314
+            178,
+            178,
+            354
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

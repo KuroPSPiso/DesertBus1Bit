@@ -1063,16 +1063,23 @@
                         "x": 0,
                         "y": 0
                     },
-                    "id": "0965f817-db34-4b43-962d-9289ee1a2339"
+                    "id": "ce77fc4f-276a-49d4-b802-af9505a1a328"
                 },
                 {
-                    "command": "MY_EVENT_OVERLAY_MOVE_TO_PX",
+                    "command": "EVENT_GBVM_SCRIPT",
                     "args": {
-                        "x": 5,
-                        "y": 0,
+                        "script": "VM_OVERLAY_SET_SUBMAP 0, 0, 20, 1, 0, 0"
+                    },
+                    "id": "b1db3e9e-63ef-479c-b8c4-92d26769bf4c"
+                },
+                {
+                    "command": "EVENT_OVERLAY_MOVE_TO",
+                    "args": {
+                        "x": 0,
+                        "y": 4,
                         "speed": 1
                     },
-                    "id": "95c4af67-872b-4acf-b76d-20383c8a2b6d"
+                    "id": "37d14b74-77ba-4ef4-87ca-e771fa163239"
                 }
             ],
             "playerHit1Script": [],
@@ -6199,9 +6206,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "a303c250-8c71-4c02-a4f0-3917d405dc88",
+        "startSceneId": "54a0cd4a-3c1b-40bf-9257-cdfff105324e",
         "startX": 0,
-        "startY": 6,
+        "startY": 2,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -6237,9 +6244,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            181,
-            181,
-            359
+            182,
+            182,
+            361
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

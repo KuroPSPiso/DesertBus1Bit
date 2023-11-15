@@ -29,8 +29,12 @@ void native_overlay_show_ui(SCRIPT_CTX * THIS) OLDCALL BANKED {
 
     uint8_t pos_x = *(int16_t*)VM_REF_TO_PTR(FN_ARG0);
     uint8_t pos_y = *(int16_t*)VM_REF_TO_PTR(FN_ARG1);
-
-    set_win_tiles(0, 0, 1, 1, WindowMap);
+    
+    const uint8_t width = 20;
+    const uint8_t height = 18;
+    fill_win_rect(0, 0, width, height, ui_black_tile);
+    
+    set_win_tiles(1, 0, 4, 1, WindowMap);
     //if ((pos_x < 20u) && (pos_y < 18u)) native_overlay_clear(THIS, 0, 0, 20u - pos_x, 18u - pos_y, color, options);
     ui_set_pos(pos_x << 3, pos_y << 3);
 }

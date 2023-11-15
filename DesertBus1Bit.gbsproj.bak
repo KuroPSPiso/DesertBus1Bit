@@ -1055,7 +1055,17 @@
             "y": 398.6701343090503,
             "actors": [],
             "triggers": [],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_OVERLAY_SHOW",
+                    "args": {
+                        "color": "black",
+                        "x": 0,
+                        "y": 0
+                    },
+                    "id": "0965f817-db34-4b43-962d-9289ee1a2339"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
@@ -5143,13 +5153,44 @@
                                                                                         {
                                                                                             "command": "EVENT_SET_VALUE",
                                                                                             "args": {
-                                                                                                "variable": "7",
+                                                                                                "variable": "6",
                                                                                                 "value": {
                                                                                                     "type": "number",
                                                                                                     "value": 22
                                                                                                 }
                                                                                             },
                                                                                             "id": "e41cab7d-d15e-45a1-9441-a9a90b2eb526"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_INC_VALUE",
+                                                                                            "args": {
+                                                                                                "variable": "7"
+                                                                                            },
+                                                                                            "id": "5152b9b2-1468-45f1-a10a-6e86dd017114"
+                                                                                        },
+                                                                                        {
+                                                                                            "command": "EVENT_IF_EXPRESSION",
+                                                                                            "args": {
+                                                                                                "expression": "$07$ > 31",
+                                                                                                "__collapseElse": true
+                                                                                            },
+                                                                                            "children": {
+                                                                                                "true": [
+                                                                                                    {
+                                                                                                        "command": "EVENT_SET_VALUE",
+                                                                                                        "args": {
+                                                                                                            "variable": "7",
+                                                                                                            "value": {
+                                                                                                                "type": "number",
+                                                                                                                "value": 22
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "id": "c9982a33-bd50-4c45-8e37-09cca4f37fcb"
+                                                                                                    }
+                                                                                                ],
+                                                                                                "false": []
+                                                                                            },
+                                                                                            "id": "ef799d79-b5d6-486e-9ec8-b26789334907"
                                                                                         }
                                                                                     ],
                                                                                     "false": []
@@ -6149,9 +6190,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "c18018e8-7035-4514-9afd-d9bf32606868",
-        "startX": 1,
-        "startY": 0,
+        "startSceneId": "a303c250-8c71-4c02-a4f0-3917d405dc88",
+        "startX": 0,
+        "startY": 6,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
@@ -6187,9 +6228,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            178,
-            178,
-            354
+            180,
+            180,
+            357
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

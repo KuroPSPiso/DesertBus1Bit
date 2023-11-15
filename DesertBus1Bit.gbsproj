@@ -1064,6 +1064,15 @@
                         "y": 0
                     },
                     "id": "0965f817-db34-4b43-962d-9289ee1a2339"
+                },
+                {
+                    "command": "MY_EVENT_OVERLAY_MOVE_TO_PX",
+                    "args": {
+                        "x": 5,
+                        "y": 0,
+                        "speed": 1
+                    },
+                    "id": "95c4af67-872b-4acf-b76d-20383c8a2b6d"
                 }
             ],
             "playerHit1Script": [],
@@ -6228,9 +6237,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            180,
-            180,
-            357
+            181,
+            181,
+            359
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",

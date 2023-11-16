@@ -1449,8 +1449,8 @@
             "autoFadeSpeed": 1,
             "id": "a303c250-8c71-4c02-a4f0-3917d405dc88",
             "symbol": "scene_2",
-            "x": 81.71428571428565,
-            "y": 398.6701343090503,
+            "x": 309.71428571428567,
+            "y": 459.67013430905035,
             "actors": [],
             "triggers": [],
             "script": [
@@ -2289,9 +2289,9 @@
                 {
                     "command": "EVENT_SWITCH_SCENE",
                     "args": {
-                        "sceneId": "f171ad91-af40-4607-b712-794330f333b0",
-                        "x": 0,
-                        "y": 0,
+                        "sceneId": "18e5318c-c534-4594-bf4f-6dce26926f19",
+                        "x": 1,
+                        "y": 1,
                         "direction": "",
                         "fadeSpeed": "2"
                     },
@@ -2302,6 +2302,47 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "playerSpriteSheetId": "34b7b972-d5b1-4018-b7af-9ae4bf16310c"
+        },
+        {
+            "name": "Scene 6",
+            "backgroundId": "8b980300-ba86-4789-9d4e-67b072484a3b",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "18e5318c-c534-4594-bf4f-6dce26926f19",
+            "symbol": "scene_6",
+            "x": 77,
+            "y": 406,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 1.5,
+                        "frames": 30
+                    },
+                    "id": "1f1cf291-2093-4f36-93d2-9c59a863cc22"
+                },
+                {
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "f171ad91-af40-4607-b712-794330f333b0",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "2"
+                    },
+                    "id": "493cf29a-f3d4-4955-8b3a-011223221af4"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
         }
     ],
     "backgrounds": [
@@ -2326,6 +2367,16 @@
             "imageHeight": 144,
             "filename": "bus_144.png",
             "tileColors": []
+        },
+        {
+            "id": "8b980300-ba86-4789-9d4e-67b072484a3b",
+            "name": "desertbus_logo",
+            "symbol": "bg_desertbus_logo",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "desertbus_logo.png"
         },
         {
             "id": "596b9c08-102d-4dba-a3a2-cc1b7450eae0",
@@ -6806,6 +6857,16 @@
             "symbol": "var_dist_high"
         },
         {
+            "id": "16",
+            "name": "_STEERING",
+            "symbol": "var_steering"
+        },
+        {
+            "id": "17",
+            "name": "actor_offset_x",
+            "symbol": "var_actor_offset_x"
+        },
+        {
             "id": "50",
             "name": "_CHAR0",
             "symbol": "var_char0"
@@ -6854,16 +6915,6 @@
             "id": "110",
             "name": "_TIME0",
             "symbol": "var_time0"
-        },
-        {
-            "id": "16",
-            "name": "_STEERING",
-            "symbol": "var_steering"
-        },
-        {
-            "id": "17",
-            "name": "actor_offset_x",
-            "symbol": "var_actor_offset_x"
         }
     ],
     "engineFieldValues": [
@@ -6873,15 +6924,15 @@
         }
     ],
     "settings": {
-        "startSceneId": "f171ad91-af40-4607-b712-794330f333b0",
+        "startSceneId": "c18018e8-7035-4514-9afd-d9bf32606868",
         "startX": 0,
-        "startY": 2,
+        "startY": 0,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 86.4000015258789,
+        "worldScrollX": 0,
         "worldScrollY": 0,
         "zoom": 100,
         "customColorsEnabled": false,
@@ -6911,9 +6962,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            182,
-            182,
-            361
+            183,
+            183,
+            363
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
